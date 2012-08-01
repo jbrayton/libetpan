@@ -52,8 +52,6 @@ extern "C" {
 #include <libetpan/annotatemore.h>
 #include <libetpan/uidplus.h>
 #include <libetpan/idle.h>
-#include <libetpan/quota.h>
-#include <libetpan/namespace.h>
 #include <libetpan/xlist.h>
 #include <libetpan/xgmlabels.h>
 

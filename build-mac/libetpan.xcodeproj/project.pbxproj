@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2127581115C97774004C5CE2 /* xgmlabels.h in Headers */ = {isa = PBXBuildFile; fileRef = 2127581015C97774004C5CE2 /* xgmlabels.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C6451AFE1083D316003135FD /* mailimf_write.h in Headers */ = {isa = PBXBuildFile; fileRef = C6F9EA32105335BC0059C3BA /* mailimf_write.h */; };
 		C6451AFF1083D316003135FD /* mhdriver_cached.h in Headers */ = {isa = PBXBuildFile; fileRef = C6F9E913105335BC0059C3BA /* mhdriver_cached.h */; };
 		C6451B001083D316003135FD /* mhdriver_types.h in Headers */ = {isa = PBXBuildFile; fileRef = C6F9E91A105335BC0059C3BA /* mhdriver_types.h */; };
@@ -883,6 +884,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2127581015C97774004C5CE2 /* xgmlabels.h */ = {isa = PBXFileReference; lastKnownFileType = file; name = xgmlabels.h; path = include/libetpan/xgmlabels.h; sourceTree = "<group>"; };
+		2127582515C9780C004C5CE2 /* xgmlabels.h */ = {isa = PBXFileReference; lastKnownFileType = file; name = xgmlabels.h; path = include/libetpan/xgmlabels.h; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* libetpan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libetpan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6516B69130DD667004ADD56 /* namespace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = namespace.h; sourceTree = "<group>"; };
@@ -1441,6 +1444,8 @@
 		0867D691FE84028FC02AAC07 /* libetpan */ = {
 			isa = PBXGroup;
 			children = (
+				2127582515C9780C004C5CE2 /* xgmlabels.h */,
+				2127581015C97774004C5CE2 /* xgmlabels.h */,
 				F8B2455F144B8D24002B56DA /* Cyrus SASL.xcodeproj */,
 				08FB77AEFE84172EC02AAC07 /* libetpan */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
@@ -2265,6 +2270,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6667DF01342ACCD00969A8E /* xlist.h in Headers */,
+				2127581115C97774004C5CE2 /* xgmlabels.h in Headers */,
 				C69AB0411054298E00F32FBD /* config.h in Headers */,
 				C6DC671C1083CDA000FA050B /* acl.h in Headers */,
 				C6DC671D1083CDA000FA050B /* acl_types.h in Headers */,
@@ -2598,7 +2605,6 @@
 				C68C620B130FFE7E00F16728 /* quota_sender.h in Headers */,
 				C68C620C130FFE7E00F16728 /* quota_types.h in Headers */,
 				C68C620D130FFE7E00F16728 /* quota.h in Headers */,
-				C6667DF01342ACCD00969A8E /* xlist.h in Headers */,
 				C6EFB8791433F1F300F805C0 /* mailstream_cfstream.h in Headers */,
 				C6CE9B1914AA9C9D00D20BA6 /* xgmlabels.h in Headers */,
 			);
@@ -3297,7 +3303,9 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = libetpan;
+				SDKROOT = macosx10.8;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -3313,7 +3321,9 @@
 				GCC_MODEL_TUNING = G5;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = libetpan;
+				SDKROOT = macosx10.8;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
