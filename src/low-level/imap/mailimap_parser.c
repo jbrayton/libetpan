@@ -7801,7 +7801,7 @@ mailimap_msg_att_rfc822_parse_progress(mailstream * fd, MMAPString * buffer,
   cur_token = * indx;
 
   r = mailimap_token_case_insensitive_parse(fd, buffer, &cur_token,
-					    "RFC822");
+					    "BODY[]");
   if (r != MAILIMAP_NO_ERROR)
     return r;
 
@@ -7853,7 +7853,7 @@ mailimap_msg_att_rfc822_header_parse(mailstream * fd, MMAPString * buffer,
   cur_token = * indx;
 
   r = mailimap_token_case_insensitive_parse(fd, buffer, &cur_token,
-					    "RFC822");
+					    "BODY[]");
   if (r != MAILIMAP_NO_ERROR)
     return r;
 
@@ -7901,7 +7901,7 @@ mailimap_msg_att_rfc822_text_parse_progress(mailstream * fd, MMAPString * buffer
   cur_token = * indx;
 
   r = mailimap_token_case_insensitive_parse(fd, buffer, &cur_token,
-					    "RFC822");
+					    "BODY[]");
   if (r != MAILIMAP_NO_ERROR)
     return r;
 

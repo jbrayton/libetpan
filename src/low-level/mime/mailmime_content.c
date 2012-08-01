@@ -1334,7 +1334,7 @@ static int mailmime_parse_with_default(const char * message, size_t length,
       
     case MAILMIME_COMPOSITE_TYPE_MESSAGE:
 
-      if (strcasecmp(content_type->ct_subtype, "rfc822") == 0)
+      if (strcasecmp(content_type->ct_subtype, "body[]") == 0)
 	body_type = MAILMIME_MESSAGE;
       else
 	body_type = MAILMIME_SINGLE;

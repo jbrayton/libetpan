@@ -308,7 +308,7 @@ struct mailmime_content * mailmime_get_content_message(void)
   if (list == NULL)
     goto free_mime_type;
 
-  subtype = strdup("rfc822");
+  subtype = strdup("body.peek[]");
   if (subtype == NULL)
     goto free_list;
 

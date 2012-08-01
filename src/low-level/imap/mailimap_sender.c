@@ -1173,7 +1173,7 @@ static int mailimap_fetch_att_send(mailstream * fd,
     return mailimap_token_send(fd, "INTERNALDATE");
 
   case MAILIMAP_FETCH_ATT_RFC822:
-    return mailimap_token_send(fd, "RFC822");
+    return mailimap_token_send(fd, "BODY.PEEK[]");
 
   case MAILIMAP_FETCH_ATT_RFC822_HEADER:
     return mailimap_token_send(fd, "RFC822.HEADER");
